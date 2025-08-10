@@ -260,7 +260,7 @@ function animateProductCards() {
 // Función para contactar vendedor
 function contactarVendedor(nombreProducto) {
     const mensaje = `Hola! Me interesa el producto: ${nombreProducto}. ¿Podrías darme más información?`;
-    const numeroWhatsApp = '573001234567'; // Cambiar por el número real
+    const numeroWhatsApp = '573203437904'; // Cambiar por el número real
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank');
 }
@@ -323,7 +323,7 @@ function setupWhatsAppButtons() {
                     mensaje = 'Hola! Me interesan sus productos típicos. ¿Podrían darme más información?';
             }
             
-            const numeroWhatsApp = '573001234567'; // Cambiar por el número real
+            const numeroWhatsApp = '573203437904'; // Cambiar por el número real
             const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
             window.open(url, '_blank');
         });
