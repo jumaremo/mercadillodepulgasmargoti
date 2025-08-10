@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercadillo de Pulgas Margoti - Tesoros de Segunda Mano</title>
+    <meta name="description" content="Encuentra tesoros únicos en el Mercadillo de Pulgas Margoti. Artículos de segunda mano y productos típicos colombianos.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-store"></i>
+                    <span>Mercadillo Margoti</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#segunda-mano">Segunda Mano</a></li>
+                    <li><a href="#productos-tipicos">Productos Típicos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>¡Bienvenidos al Mercadillo de Pulgas Margoti!</h1>
+            <p>Descubre tesoros únicos y productos típicos en el mejor mercadillo de la región</p>
+            <div class="hero-buttons">
+                <a href="#segunda-mano" class="btn btn-primary">Ver Artículos</a>
+                <a href="#productos-tipicos" class="btn btn-secondary">Productos Típicos</a>
+            </div>
+        </div>
+        <div class="hero-animation">
+            <div class="floating-items">
+                <i class="fas fa-gem"></i>
+                <i class="fas fa-book"></i>
+                <i class="fas fa-camera-retro"></i>
+                <i class="fas fa-music"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías Destacadas -->
+    <section class="categories">
+        <div class="container">
+            <h2>Categorías Destacadas</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="electronica">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Electrónicos</h3>
+                    <p>Computadoras, celulares, accesorios</p>
+                </div>
+                <div class="category-card" data-category="hogar">
+                    <i class="fas fa-home"></i>
+                    <h3>Hogar</h3>
+                    <p>Muebles, decoración, enseres</p>
+                </div>
+                <div class="category-card" data-category="ropa">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Ropa & Moda</h3>
+                    <p>Vestimenta, zapatos, accesorios</p>
+                </div>
+                <div class="category-card" data-category="libros">
+                    <i class="fas fa-book"></i>
+                    <h3>Libros</h3>
+                    <p>Literatura, técnicos, colecciones</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos de Segunda Mano -->
+    <section id="segunda-mano" class="productos-section">
+        <div class="container">
+            <h2>Artículos de Segunda Mano</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="electronica">Electrónicos</button>
+                <button class="filter-btn" data-filter="hogar">Hogar</button>
+                <button class="filter-btn" data-filter="ropa">Ropa</button>
+                <button class="filter-btn" data-filter="libros">Libros</button>
+            </div>
+            <div class="productos-grid" id="productos-grid">
+                <!-- Los productos se cargarán aquí dinámicamente -->
+            </div>
+            <div class="load-more">
+                <button class="btn btn-outline" id="load-more-btn">Cargar Más Productos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Típicos -->
+    <section id="productos-tipicos" class="productos-tipicos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Productos Típicos Colombianos</h2>
+                <p>Sabores auténticos de nuestra tierra</p>
+            </div>
+            <div class="tipicos-grid">
+                <div class="tipico-card">
+                    <div class="tipico-image">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <div class="tipico-content">
+                        <h3>Achiras</h3>
+                        <p>Deliciosas galletas tradicionales hechas con harina de achira, perfectas para acompañar tu café.</p>
+                        <div class="price">$8.000 - $15.000</div>
+                        <button class="btn btn-primary tipico-btn" data-producto="achiras">
+                            <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                        </button>
+                    </div>
+                </div>
+                <div class="tipico-card">
+                    <div class="tipico-image">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <div class="tipico-content">
+                        <h3>Corcho Paisa</h3>
+                        <p>Tradicional pan dulce antioqueño, esponjoso y con un sabor único que te transporta a casa.</p>
+                        <div class="price">$12.000 - $18.000</div>
+                        <button class="btn btn-primary tipico-btn" data-producto="corcho">
+                            <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                        </button>
+                    </div>
+                </div>
+                <div class="tipico-card">
+                    <div class="tipico-image">
+                        <i class="fas fa-cookie"></i>
+                    </div>
+                    <div class="tipico-content">
+                        <h3>Bizcochos</h3>
+                        <p>Crujientes y dorados bizcochos artesanales, ideales para cualquier momento del día.</p>
+                        <div class="price">$6.000 - $12.000</div>
+                        <button class="btn btn-primary tipico-btn" data-producto="bizcochos">
+                            <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                        </button>
+                    </div>
+                </div>
+                <div class="tipico-card">
+                    <div class="tipico-image">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="tipico-content">
+                        <h3>Pan de Arroz</h3>
+                        <p>Suave y nutritivo pan elaborado con harina de arroz, libre de gluten y lleno de sabor.</p>
+                        <div class="price">$10.000 - $16.000</div>
+                        <button class="btn btn-primary tipico-btn" data-producto="pan-arroz">
+                            <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios">
+        <div class="container">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Encontré tesoros increíbles a precios justos. ¡Y los productos típicos están deliciosos!"</p>
+                    <div class="cliente">- María González</div>
+                </div>
+                <div class="testimonio-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Excelente variedad y calidad. El trato es muy amable y profesional."</p>
+                    <div class="cliente">- Carlos Rodríguez</div>
+                </div>
+                <div class="testimonio-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Los productos típicos son auténticos y frescos. Totalmente recomendado."</p>
+                    <div class="cliente">- Ana Martínez</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <div class="contacto-content">
+                <div class="contacto-info">
+                    <h2>Contáctanos</h2>
+                    <div class="contacto-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Calle Principal #123, Margoti<br>Colombia</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>+57 300 123 4567</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horarios</h3>
+                            <p>Lun - Sáb: 8:00 AM - 6:00 PM<br>Dom: 9:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacto-form">
+                    <h3>Envíanos un mensaje</h3>
+                    <form id="contact-form">
+                        <input type="text" placeholder="Tu nombre" required>
+                        <input type="email" placeholder="Tu email" required>
+                        <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-store"></i>
+                        <span>Mercadillo Margoti</span>
+                    </div>
+                    <p>Tu destino para encontrar tesoros únicos y productos típicos de calidad.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#segunda-mano">Segunda Mano</a></li>
+                        <li><a href="#productos-tipicos">Productos Típicos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categorías</h3>
+                    <ul>
+                        <li><a href="#">Electrónicos</a></li>
+                        <li><a href="#">Hogar</a></li>
+                        <li><a href="#">Ropa & Moda</a></li>
+                        <li><a href="#">Libros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-phone"></i> +57 300 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@mercadillomargoti.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Margoti, Colombia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mercadillo de Pulgas Margoti. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/573001234567" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
