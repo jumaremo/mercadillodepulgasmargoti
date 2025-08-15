@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Amor</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 50%, #e84393 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .card {
+            width: 320px;
+            height: 550px;
+            max-height: 90vh;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .love-hearts {
+            font-size: 50px;
+            margin-bottom: 20px;
+            animation: love-beat 2s infinite;
+        }
+        
+        @keyframes love-beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .romantic-title {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .love-letter {
+            background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            border: 2px solid #fd79a8;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .love-letter::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            font-size: 40px;
+            color: #fd79a8;
+            font-family: serif;
+        }
+        
+        .love-letter::after {
+            content: '"';
+            position: absolute;
+            bottom: -25px;
+            right: 15px;
+            font-size: 40px;
+            color: #fd79a8;
+            font-family: serif;
+        }
+        
+        .love-message {
+            font-size: 16px;
+            color: #2c3e50;
+            line-height: 1.6;
+            font-style: italic;
+            margin: 15px 0;
+        }
+        
+        .signature {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 15px;
+            color: #e84393;
+            font-weight: 600;
+        }
+        
+        .anniversary-badge {
+            background: linear-gradient(45deg, #fd79a8, #e84393);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        
+        .decorative-line {
+            width: 60%;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #fd79a8, transparent);
+            margin: 20px 0;
+        }
+        
+        .romance-footer {
+            margin-top: 25px;
+        }
+        
+        .forever-text {
+            font-size: 16px;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+        
+        .heart-row {
+            font-size: 22px;
+            color: #fd79a8;
+            letter-spacing: 8px;
+        }
+        
+        .floating-love {
+            position: absolute;
+            font-size: 14px;
+            animation: love-float 5s infinite ease-in-out;
+        }
+        
+        .love-1 { top: 10%; left: 8%; animation-delay: 0s; color: #fd79a8; }
+        .love-2 { top: 15%; right: 8%; animation-delay: 1s; color: #e84393; }
+        .love-3 { bottom: 20%; left: 5%; animation-delay: 2s; color: #fdcb6e; }
+        .love-4 { bottom: 25%; right: 5%; animation-delay: 3s; color: #fd79a8; }
+        .love-5 { top: 40%; left: 5%; animation-delay: 4s; color: #e84393; }
+        .love-6 { bottom: 45%; right: 8%; animation-delay: 0.5s; color: #fdcb6e; }
+        
+        @keyframes love-float {
+            0%, 100% { 
+                transform: translateY(0px) rotate(0deg);
+                opacity: 0.7;
+            }
+            25% { 
+                transform: translateY(-8px) rotate(5deg);
+                opacity: 0.9;
+            }
+            50% { 
+                transform: translateY(-15px) rotate(-5deg);
+                opacity: 1;
+            }
+            75% { 
+                transform: translateY(-8px) rotate(3deg);
+                opacity: 0.9;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="floating-love love-1">💕</div>
+        <div class="floating-love love-2">💖</div>
+        <div class="floating-love love-3">💗</div>
+        <div class="floating-love love-4">💝</div>
+        <div class="floating-love love-5">💘</div>
+        <div class="floating-love love-6">💞</div>
+        
+        <div class="love-hearts">💕💖💕</div>
+        
+        <div class="romantic-title">Para Mi Amor</div>
+        
+        <div class="anniversary-badge">10 Años Juntos</div>
+        
+        <div class="decorative-line"></div>
+        
+        <div class="love-letter">
+            <div class="love-message">
+                Hace 10 años dijimos "Sí" y desde entonces cada día ha sido una aventura maravillosa contigo.
+                <br><br>
+                Gracias por ser mi compañera de vida, mi mejor amigo y el amor de mi existencia.
+                <br><br>
+                Te amo hoy más que ayer, pero menos que mañana.
+            </div>
+            <div class="signature">Con todo mi amor ❤️</div>
+        </div>
+        
+        <div class="decorative-line"></div>
+        
+        <div class="romance-footer">
+            <div class="forever-text">Para siempre y un día más...</div>
+            <div class="heart-row">💖 💕 💖</div>
+        </div>
+    </div>
+</body>
+</html>

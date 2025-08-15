@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Familia de Tres</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 50%, #fd79a8 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .card {
+            width: 320px;
+            height: 550px;
+            max-height: 90vh;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .family-title {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .family-emoji-big {
+            font-size: 80px;
+            margin: 20px 0;
+            animation: family-glow 3s infinite;
+        }
+        
+        @keyframes family-glow {
+            0%, 100% { transform: scale(1); filter: brightness(1); }
+            50% { transform: scale(1.05); filter: brightness(1.2); }
+        }
+        
+        .decade-text {
+            font-size: 20px;
+            color: #6c5ce7;
+            margin: 20px 0;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .love-story {
+            font-size: 16px;
+            color: #34495e;
+            line-height: 1.5;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        
+        .timeline {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #6c5ce7;
+        }
+        
+        .timeline-item {
+            font-size: 14px;
+            color: #2c3e50;
+            margin: 8px 0;
+            font-weight: 500;
+        }
+        
+        .year {
+            color: #6c5ce7;
+            font-weight: bold;
+        }
+        
+        .decorative-line {
+            width: 80%;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #6c5ce7, transparent);
+            margin: 20px 0;
+        }
+        
+        .blessing-text {
+            font-size: 15px;
+            color: #7f8c8d;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+        
+        .floating-hearts {
+            position: absolute;
+            font-size: 16px;
+            animation: heart-dance 5s infinite ease-in-out;
+        }
+        
+        .heart-1 { top: 10%; left: 10%; animation-delay: 0s; color: #fd79a8; }
+        .heart-2 { top: 15%; right: 10%; animation-delay: 1s; color: #6c5ce7; }
+        .heart-3 { bottom: 25%; left: 8%; animation-delay: 2s; color: #74b9ff; }
+        .heart-4 { bottom: 15%; right: 8%; animation-delay: 3s; color: #fd79a8; }
+        
+        @keyframes heart-dance {
+            0%, 100% { transform: translateY(0px) scale(1); opacity: 0.6; }
+            25% { transform: translateY(-10px) scale(1.1); opacity: 0.8; }
+            50% { transform: translateY(-5px) scale(0.9); opacity: 1; }
+            75% { transform: translateY(-15px) scale(1.05); opacity: 0.7; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="floating-hearts heart-1">💖</div>
+        <div class="floating-hearts heart-2">💜</div>
+        <div class="floating-hearts heart-3">💙</div>
+        <div class="floating-hearts heart-4">💕</div>
+        
+        <div class="family-title">NUESTRA FAMILIA</div>
+        
+        <div class="family-emoji-big">👨‍👩‍👦</div>
+        
+        <div class="decade-text">Una década juntos</div>
+        
+        <div class="decorative-line"></div>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="year">2014:</span> Llegó nuestro príncipe
+            </div>
+            <div class="timeline-item">
+                <span class="year">2015:</span> Nos dijimos "Sí, acepto"
+            </div>
+            <div class="timeline-item">
+                <span class="year">2025:</span> 10 años de matrimonio, 11 de familia
+            </div>
+        </div>
+        
+        <div class="love-story">
+            De pareja a familia...<br>
+            Tres corazones que laten<br>
+            como uno solo.
+        </div>
+        
+        <div class="decorative-line"></div>
+        
+        <div class="blessing-text">
+            Bendecidos por 10 años<br>
+            de amor, risas y crecimiento
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Años de Recuerdos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #81ecec 0%, #74b9ff 50%, #a29bfe 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .card {
+            width: 320px;
+            height: 550px;
+            max-height: 90vh;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .title {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #74b9ff;
+            font-style: italic;
+        }
+        
+        .timeline-container {
+            flex: 1;
+            position: relative;
+        }
+        
+        .timeline-line {
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, #74b9ff, #a29bfe, #fd79a8);
+        }
+        
+        .memory-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .memory-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #74b9ff;
+            border: 3px solid white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            z-index: 2;
+            position: relative;
+        }
+        
+        .memory-content {
+            margin-left: 20px;
+            background: #f8f9fa;
+            padding: 12px 15px;
+            border-radius: 10px;
+            border-left: 3px solid #74b9ff;
+            flex: 1;
+        }
+        
+        .memory-year {
+            font-size: 14px;
+            color: #74b9ff;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .memory-text {
+            font-size: 13px;
+            color: #2c3e50;
+            line-height: 1.4;
+        }
+        
+        .memory-emoji {
+            font-size: 16px;
+            margin-right: 8px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .celebration {
+            font-size: 18px;
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .hearts-row {
+            font-size: 20px;
+            color: #fd79a8;
+            letter-spacing: 3px;
+        }
+        
+        .floating-memories {
+            position: absolute;
+            font-size: 14px;
+            opacity: 0.3;
+            animation: memory-float 6s infinite ease-in-out;
+        }
+        
+        .mem-1 { top: 15%; right: 10%; animation-delay: 0s; }
+        .mem-2 { top: 40%; right: 5%; animation-delay: 2s; }
+        .mem-3 { bottom: 30%; right: 8%; animation-delay: 4s; }
+        
+        @keyframes memory-float {
+            0%, 100% { transform: translateY(0px); opacity: 0.3; }
+            50% { transform: translateY(-20px); opacity: 0.6; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="floating-memories mem-1">📷</div>
+        <div class="floating-memories mem-2">🎉</div>
+        <div class="floating-memories mem-3">✨</div>
+        
+        <div class="header">
+            <div class="title">10 AÑOS</div>
+            <div class="subtitle">de hermosos recuerdos</div>
+        </div>
+        
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            
+            <div class="memory-item">
+                <div class="memory-dot"></div>
+                <div class="memory-content">
+                    <div class="memory-year">2014</div>
+                    <div class="memory-text">
+                        <span class="memory-emoji">👶</span>
+                        Llegó nuestro bebé, primera bendición
+                    </div>
+                </div>
+            </div>
+            
+            <div class="memory-item">
+                <div class="memory-dot"></div>
+                <div class="memory-content">
+                    <div class="memory-year">2015</div>
+                    <div class="memory-text">
+                        <span class="memory-emoji">💒</span>
+                        Nuestra boda, formalizamos el amor
+                    </div>
+                </div>
+            </div>
+            
+            <div class="memory-item">
+                <div class="memory-dot"></div>
+                <div class="memory-content">
+                    <div class="memory-year">2016-2020</div>
+                    <div class="memory-text">
+                        <span class="memory-emoji">🏠</span>
+                        Primeros años construyendo hogar
+                    </div>
+                </div>
+            </div>
+            
+            <div class="memory-item">
+                <div class="memory-dot"></div>
+                <div class="memory-content">
+                    <div class="memory-year">2021-2024</div>
+                    <div class="memory-text">
+                        <span class="memory-emoji">🌱</span>
+                        Creciendo juntos como familia
+                    </div>
+                </div>
+            </div>
+            
+            <div class="memory-item">
+                <div class="memory-dot"></div>
+                <div class="memory-content">
+                    <div class="memory-year">2025</div>
+                    <div class="memory-text">
+                        <span class="memory-emoji">🎊</span>
+                        Celebrando una década de amor
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="celebration">Cada año, un tesoro</div>
+            <div class="hearts-row">💖 💜 💙</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gran Celebración Final!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 25%, #fd79a8 50%, #a29bfe 75%, #74b9ff 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            animation: rainbow-bg 5s ease-in-out infinite;
+        }
+        
+        @keyframes rainbow-bg {
+            0%, 100% { background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 25%, #fd79a8 50%, #a29bfe 75%, #74b9ff 100%); }
+            50% { background: linear-gradient(135deg, #74b9ff 0%, #a29bfe 25%, #fd79a8 50%, #fab1a0 75%, #ffeaa7 100%); }
+        }
+        
+        .card {
+            width: 320px;
+            height: 550px;
+            max-height: 90vh;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 3px solid gold;
+        }
+        
+        .celebration-fireworks {
+            font-size: 40px;
+            margin-bottom: 15px;
+            animation: fireworks-explosion 3s infinite;
+        }
+        
+        @keyframes fireworks-explosion {
+            0%, 100% { 
+                transform: scale(1) rotate(0deg);
+                opacity: 0.8;
+            }
+            25% { 
+                transform: scale(1.2) rotate(10deg);
+                opacity: 1;
+            }
+            50% { 
+                transform: scale(0.9) rotate(-5deg);
+                opacity: 0.9;
+            }
+            75% { 
+                transform: scale(1.1) rotate(5deg);
+                opacity: 1;
+            }
+        }
+        
+        .mega-title {
+            font-size: 32px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #d4af37, #ffd700, #d4af37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            animation: title-glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes title-glow {
+            from { filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5)); }
+            to { filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.8)); }
+        }
+        
+        .celebration-subtitle {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .achievement-badge {
+            background: linear-gradient(45deg, #d4af37, #ffd700);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 15px 0;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            border: 2px solid #b8941f;
+            animation: badge-shine 3s infinite;
+        }
+        
+        @keyframes badge-shine {
+            0%, 100% { box-shadow: 0 6px 15px rgba(0,0,0,0.3); }
+            50% { box-shadow: 0 6px 25px rgba(255, 215, 0, 0.6); }
+        }
+        
+        .epic-message {
+            font-size: 17px;
+            color: #34495e;
+            line-height: 1.6;
+            margin: 20px 0;
+            font-weight: 500;
+        }
+        
+        .stats-celebration {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 3px solid #d4af37;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        .stat-emoji {
+            font-size: 16px;
+            margin-right: 8px;
+        }
+        
+        .stat-value {
+            color: #d4af37;
+            font-weight: bold;
+        }
+        
+        .party-zone {
+            margin: 25px 0;
+        }
+        
+        .party-text {
+            font-size: 20px;
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .mega-emoji-row {
+            font-size: 28px;
+            letter-spacing: 5px;
+            animation: party-bounce 1s infinite;
+        }
+        
+        @keyframes party-bounce {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+        }
+        
+        .final-message {
+            font-size: 16px;
+            color: #7f8c8d;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        
+        .confetti {
+            position: absolute;
+            font-size: 12px;
+            animation: confetti-fall 4s infinite linear;
+        }
+        
+        .conf-1 { top: -10%; left: 10%; animation-delay: 0s; color: #fd79a8; }
+        .conf-2 { top: -10%; left: 30%; animation-delay: 0.5s; color: #ffd700; }
+        .conf-3 { top: -10%; left: 50%; animation-delay: 1s; color: #74b9ff; }
+        .conf-4 { top: -10%; left: 70%; animation-delay: 1.5s; color: #a29bfe; }
+        .conf-5 { top: -10%; left: 90%; animation-delay: 2s; color: #fd79a8; }
+        .conf-6 { top: -10%; left: 20%; animation-delay: 2.5s; color: #ffd700; }
+        .conf-7 { top: -10%; left: 60%; animation-delay: 3s; color: #74b9ff; }
+        .conf-8 { top: -10%; left: 80%; animation-delay: 3.5s; color: #a29bfe; }
+        
+        @keyframes confetti-fall {
+            0% { 
+                transform: translateY(-20px) rotate(0deg);
+                opacity: 1;
+            }
+            100% { 
+                transform: translateY(600px) rotate(720deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="confetti conf-1">🎊</div>
+        <div class="confetti conf-2">✨</div>
+        <div class="confetti conf-3">🎉</div>
+        <div class="confetti conf-4">⭐</div>
+        <div class="confetti conf-5">🎊</div>
+        <div class="confetti conf-6">✨</div>
+        <div class="confetti conf-7">🎉</div>
+        <div class="confetti conf-8">⭐</div>
+        
+        <div class="celebration-fireworks">🎆🎇🎆</div>
+        
+        <div class="mega-title">¡LO LOGRAMOS!</div>
+        <div class="celebration-subtitle">10 años increíbles</div>
+        
+        <div class="achievement-badge">🏆 DÉCADA COMPLETADA 🏆</div>
+        
+        <div class="epic-message">
+            De novios a esposos,<br>
+            de pareja a familia,<br>
+            de sueños a realidad...
+        </div>
+        
+        <div class="stats-celebration">
+            <div class="stat-row">
+                <span><span class="stat-emoji">💒</span>Matrimonio</span>
+                <span class="stat-value">✓ Exitoso</span>
+            </div>
+            <div class="stat-row">
+                <span><span class="stat-emoji">👶</span>Hijo hermoso</span>
+                <span class="stat-value">✓ Bendición</span>
+            </div>
+            <div class="stat-row">
+                <span><span class="stat-emoji">🏠</span>Hogar feliz</span>
+                <span class="stat-value">✓ Construido</span>
+            </div>
+            <div class="stat-row">
+                <span><span class="stat-emoji">💕</span>Amor verdadero</span>
+                <span class="stat-value">✓ Para siempre</span>
+            </div>
+        </div>
+        
+        <div class="party-zone">
+            <div class="party-text">¡A CELEBRAR!</div>
+            <div class="mega-emoji-row">🥳🎊🎉🍾</div>
+        </div>
+        
+        <div class="final-message">
+            ¡Gracias por ser parte<br>
+            de nuestra historia de amor!
+        </div>
+    </div>
+</body>
+</html>

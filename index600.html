@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratitud por 10 Años</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #fdcb6e 0%, #e17055 50%, #d63031 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .card {
+            width: 320px;
+            height: 550px;
+            max-height: 90vh;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .gratitude-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+            animation: grateful-pulse 3s infinite;
+        }
+        
+        @keyframes grateful-pulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+        
+        .title {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .gratitude-text {
+            font-size: 18px;
+            color: #34495e;
+            line-height: 1.6;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        
+        .thankful-list {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #e17055;
+            text-align: left;
+        }
+        
+        .thankful-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 15px;
+            color: #2c3e50;
+        }
+        
+        .thankful-emoji {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+        
+        .blessing-quote {
+            font-size: 16px;
+            color: #e17055;
+            font-weight: 600;
+            margin: 25px 0 15px 0;
+            font-style: italic;
+        }
+        
+        .decorative-line {
+            width: 80%;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #e17055, transparent);
+            margin: 20px 0;
+        }
+        
+        .final-message {
+            font-size: 15px;
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+        
+        .floating-gratitude {
+            position: absolute;
+            font-size: 16px;
+            animation: gratitude-float 5s infinite ease-in-out;
+        }
+        
+        .grat-1 { top: 12%; left: 12%; animation-delay: 0s; color: #fdcb6e; }
+        .grat-2 { top: 18%; right: 12%; animation-delay: 1.5s; color: #e17055; }
+        .grat-3 { bottom: 25%; left: 8%; animation-delay: 3s; color: #d63031; }
+        .grat-4 { bottom: 18%; right: 8%; animation-delay: 4.5s; color: #fdcb6e; }
+        
+        @keyframes gratitude-float {
+            0%, 100% { 
+                transform: translateY(0px) rotate(0deg);
+                opacity: 0.6;
+            }
+            25% { 
+                transform: translateY(-8px) rotate(5deg);
+                opacity: 0.8;
+            }
+            50% { 
+                transform: translateY(-15px) rotate(-5deg);
+                opacity: 1;
+            }
+            75% { 
+                transform: translateY(-8px) rotate(3deg);
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="floating-gratitude grat-1">🙏</div>
+        <div class="floating-gratitude grat-2">💛</div>
+        <div class="floating-gratitude grat-3">✨</div>
+        <div class="floating-gratitude grat-4">🌟</div>
+        
+        <div class="gratitude-icon">🙏</div>
+        
+        <div class="title">AGRADECIDOS</div>
+        
+        <div class="gratitude-text">
+            Por estos 10 años llenos<br>
+            de bendiciones, crecimiento<br>
+            y amor incondicional.
+        </div>
+        
+        <div class="decorative-line"></div>
+        
+        <div class="thankful-list">
+            <div class="thankful-item">
+                <span class="thankful-emoji">💑</span>
+                Por encontrarnos y amarnos
+            </div>
+            <div class="thankful-item">
+                <span class="thankful-emoji">👶</span>
+                Por nuestro hijo maravilloso
+            </div>
+            <div class="thankful-item">
+                <span class="thankful-emoji">🏡</span>
+                Por el hogar que construimos
+            </div>
+            <div class="thankful-item">
+                <span class="thankful-emoji">💪</span>
+                Por superar cada desafío
+            </div>
+            <div class="thankful-item">
+                <span class="thankful-emoji">😊</span>
+                Por cada sonrisa compartida
+            </div>
+        </div>
+        
+        <div class="blessing-quote">
+            "La gratitud transforma lo que<br>
+            tenemos en suficiente"
+        </div>
+        
+        <div class="decorative-line"></div>
+        
+        <div class="final-message">
+            Gracias vida, por estos<br>
+            10 años perfectos juntos
+        </div>
+    </div>
+</body>
+</html>

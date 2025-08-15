@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Años en Números</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 50%, #e17055 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .card {
+            width: 320px;
+            height: 550px;
+            max-height: 90vh;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .title {
+            font-size: 26px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #fd79a8;
+            font-style: italic;
+        }
+        
+        .stats-container {
+            flex: 1;
+        }
+        
+        .stat-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 12px;
+            border-left: 4px solid #fd79a8;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(253, 121, 168, 0.1));
+        }
+        
+        .stat-emoji {
+            font-size: 24px;
+            margin-right: 12px;
+        }
+        
+        .stat-text {
+            flex: 1;
+            font-size: 14px;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        
+        .stat-number {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fd79a8;
+        }
+        
+        .fun-fact {
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: white;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 14px;
+            font-style: italic;
+        }
+        
+        .celebration-footer {
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        .celebration-text {
+            font-size: 16px;
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .emoji-row {
+            font-size: 18px;
+            letter-spacing: 5px;
+        }
+        
+        .floating-numbers {
+            position: absolute;
+            font-size: 12px;
+            color: #fd79a8;
+            opacity: 0.4;
+            animation: number-float 4s infinite ease-in-out;
+        }
+        
+        .num-1 { top: 15%; left: 8%; animation-delay: 0s; }
+        .num-2 { top: 30%; right: 8%; animation-delay: 1s; }
+        .num-3 { bottom: 35%; left: 5%; animation-delay: 2s; }
+        .num-4 { bottom: 20%; right: 5%; animation-delay: 3s; }
+        
+        @keyframes number-float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.4; }
+            50% { transform: translateY(-15px) rotate(10deg); opacity: 0.7; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="floating-numbers num-1">10</div>
+        <div class="floating-numbers num-2">365</div>
+        <div class="floating-numbers num-3">💕</div>
+        <div class="floating-numbers num-4">∞</div>
+        
+        <div class="header">
+            <div class="title">10 AÑOS</div>
+            <div class="subtitle">en números</div>
+        </div>
+        
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-emoji">📅</div>
+                <div class="stat-text">Días juntos</div>
+                <div class="stat-number">3,650+</div>
+            </div>
+            
+            <div class="stat-item">
+                <div class="stat-emoji">😍</div>
+                <div class="stat-text">"Te amo" dichos</div>
+                <div class="stat-number">∞</div>
+            </div>
+            
+            <div class="stat-item">
+                <div class="stat-emoji">🎂</div>
+                <div class="stat-text">Cumpleaños celebrados</div>
+                <div class="stat-number">30</div>
+            </div>
+            
+            <div class="stat-item">
+                <div class="stat-emoji">📸</div>
+                <div class="stat-text">Fotos familiares</div>
+                <div class="stat-number">1000+</div>
+            </div>
+            
+            <div class="stat-item">
+                <div class="stat-emoji">🏠</div>
+                <div class="stat-text">Hogar construido</div>
+                <div class="stat-number">1</div>
+            </div>
+            
+            <div class="stat-item">
+                <div class="stat-emoji">👶➡️🧒</div>
+                <div class="stat-text">Años viendo crecer a nuestro hijo</div>
+                <div class="stat-number">11</div>
+            </div>
+            
+            <div class="stat-item">
+                <div class="stat-emoji">💝</div>
+                <div class="stat-text">Recuerdos creados</div>
+                <div class="stat-number">∞</div>
+            </div>
+        </div>
+        
+        <div class="fun-fact">
+            💡 Dato curioso: En 10 años hemos compartido más de 87,000 horas juntos
+        </div>
+        
+        <div class="celebration-footer">
+            <div class="celebration-text">¡Y seguimos contando!</div>
+            <div class="emoji-row">🎉 💖 🎊</div>
+        </div>
+    </div>
+</body>
+</html>
